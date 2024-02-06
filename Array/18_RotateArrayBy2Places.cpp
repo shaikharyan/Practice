@@ -22,3 +22,24 @@ int main() {
 
     return 0;
 }
+
+
+//CodeNinjas
+vector<int> rotateArray(vector<int>arr, int k) {
+    // Write your code here.
+    int n = arr.size();
+    
+    // If k is greater than the size of the array, take its modulo
+    k = k % n;
+
+    // Create a new vector to store the rotated array
+    vector<int> rotatedArray(n);
+
+    // Copy elements from the original array to the rotated array
+    for (int i = 0; i < n; ++i) {
+        int rotatedIndex = (i + n - k) % n;  // Calculate the new index after rotation
+        rotatedArray[rotatedIndex] = arr[i];
+    }
+
+    return rotatedArray;
+}
