@@ -25,6 +25,7 @@ int main() {
 
 
 //CodeNinjas
+//https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 vector<int> rotateArray(vector<int>arr, int k) {
     // Write your code here.
     int n = arr.size();
